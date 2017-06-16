@@ -2,6 +2,11 @@ package planLib;
 
 import java.util.Map;
 
+/**
+ * <p> Represent a planning problem predicate </p>
+ * @author Elad Ben Zaken
+ *
+ */
 public class Predicate {
 	private String name;
 	private Object[] args;

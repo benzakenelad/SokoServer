@@ -16,7 +16,25 @@ public abstract class CommonSearchable implements Searchable<Position> {
 		this.levelData = lvl.getLevelByChar2DArray();
 		this.startPosition = startPosition;
 		this.goalPosition = goalPosition;
-		levelData[startPosition.getRow()][startPosition.getCol()] = ' ';
+		int raw = startPosition.getRow(), col = startPosition.getCol();
+		int playerRaw = lvl.getPlayer().getPos().getRow();
+		int playerCol = lvl.getPlayer().getPos().getCol();
+
+		if (levelData[raw][col] == 'B')
+			levelData[raw][col] = 'o';
+		else if (levelData[raw][col] == 'A')
+			levelData[raw][col] = ' ';
+		else if (levelData[raw][col] == '@')
+			levelData[raw][col] = ' ';
+		else if (levelData[raw][col] == '$'){
+			System.out.println("ERROR - COMMON SEARCHER");
+		}
+		
+		if (levelData[playerRaw][playerCol] == 'A')
+			levelData[playerRaw][playerCol] = ' ';
+		else if (levelData[playerRaw][playerCol] == 'B')
+			levelData[playerRaw][playerCol] = 'o';
+		
 		initialized = true;
 	}
 

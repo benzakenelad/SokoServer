@@ -2,10 +2,11 @@ package planLib;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
-import planLib.PlanAction;
-import planLib.Predicate;
-
+/**
+ * <p> Represent current state in a planning problem </p>
+ * @author Elad Ben Zaken
+ * 
+ */
 public class State {
 	private Set<Predicate> predicates = new HashSet<>();
 
