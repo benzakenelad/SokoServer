@@ -30,7 +30,6 @@ public class ClientInformation implements Serializable {
 	}
 	
 	public ClientInformation() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public ClientInformation(int ID, String IP, String port, String state, String task, Socket connectionSocket) {

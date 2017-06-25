@@ -121,7 +121,7 @@ public class SolveSokobanLevel {
 		return movmentActions;
 	}
 
-	private int[][] translatePlanActions(List<PlanAction> actions) { // TODO
+	private int[][] translatePlanActions(List<PlanAction> actions) { 
 		int len = actions.size();
 		int[][] arr = new int[len][2];
 
