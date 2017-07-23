@@ -21,28 +21,22 @@ import solver.moveBox.MoveBox1Step;
 import solver.moveBox.MoveBoxToTarget;
 
 /**
- * <h6>solveSokobanLevel</h6> Solving SokoBan game Level.
+ * <p>solveSokobanLevel</p> Solving SokoBan game Level.
  * 
  * @author Elad Ben Zaken
  *
  */
 public class SolveSokobanLevel {
-
 	/**
-	 * <h6>optimalSolve</h6> Solving SokoBan Level t times, Returns an ArrayList
+	 * <p>optimalSolve</p> Solving SokoBan Level t times, Returns an ArrayList
 	 * with the smallest amount of Actions who solves the Level.
-	 * 
-	 * @param lvl
-	 *            - SokoBan Level to solve.
-	 * @param times
-	 *            - As much as the value of times is bigger then the solution is
-	 *            more optimized.
+	 * @param lvl - Level
+	 * @param t - Times
 	 * @return ArrayList with the solving actions, if there is no solution
 	 *         returns null.
-	 * @throws FileNotFoundException
-	 * @throws Exception
+	 * @throws Exception - 
 	 */
-	public List<Action> optimalSolve(Level lvl, int t) throws FileNotFoundException, Exception {
+	public List<Action> optimalSolve(Level lvl, int t) throws Exception {
 		List<Action> finalActions = null;
 		boolean firstTimeSolved = true;
 
@@ -67,17 +61,16 @@ public class SolveSokobanLevel {
 	}
 
 	/**
-	 * <h6>noneOptimalSolve</h6> Solving SokoBan Level (none optimal solving),
+	 * <p>noneOptimalSolve</p> Solving SokoBan Level (none optimal solving),
 	 * Returns an ArrayList with the Actions who solves the Level.
 	 * 
 	 * @param lvl
 	 *            - SokoBan Level to solve.
 	 * @return ArrayList with the solving actions, if there is no solution
 	 *         returns null.
-	 * @throws FileNotFoundException
-	 * @throws Exception
+	 * @throws Exception - 
 	 */
-	public List<Action> noneOptimalSolve(Level lvl) throws FileNotFoundException, Exception {
+	public List<Action> noneOptimalSolve(Level lvl) throws Exception {
 		List<Action> finalActions = null;
 		while (true) {
 			Level tempLvl = lvl.clone();

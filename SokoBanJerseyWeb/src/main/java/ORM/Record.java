@@ -12,6 +12,11 @@ import javax.persistence.ManyToOne;
 
 @SuppressWarnings("serial")
 @Entity
+/**
+ * <p> Level Record entity </p>
+ * @author Elad Ben Zaken
+ *
+ */
 public class Record implements Serializable{
 	
 	// Data members

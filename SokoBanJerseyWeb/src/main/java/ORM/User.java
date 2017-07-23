@@ -12,6 +12,11 @@ import javax.persistence.OneToMany;
 
 @SuppressWarnings("serial")
 @Entity
+/**
+ *  
+ * <p> User entity </p>
+ * @author Elad Ben Zaken
+ */
 public class User implements Serializable {
 
 	// Data members

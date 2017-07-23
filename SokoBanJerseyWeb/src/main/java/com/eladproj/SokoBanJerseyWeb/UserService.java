@@ -12,8 +12,13 @@ import ORM.LevelSolution;
 import ORM.ORMManager;
 
 @Path("request")
+/**
+ * Solution Services
+ * @author Elad Ben Zaken
+ *
+ */
 public class UserService {
-	private ORMManager manager;
+	private static ORMManager manager;
 
 	public UserService() {
 		manager = new ORMManager();

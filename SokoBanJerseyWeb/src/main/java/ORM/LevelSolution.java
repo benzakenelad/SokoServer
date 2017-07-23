@@ -9,6 +9,11 @@ import javax.persistence.Id;
 
 @SuppressWarnings("serial")
 @Entity
+/**
+ * <p> Level Solution entity </p>
+ * @author Elad Ben Zaken
+ *
+ */
 public class LevelSolution implements Serializable{
 	
 	private Integer ID;
